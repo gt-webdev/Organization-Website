@@ -82,7 +82,7 @@ gulp.task('serve', ['watch'], function() {
   server_process.stderr.on('data', log);
 
   // Restart server when server.js is modified and transpiled
-  gulp.watch('dist-server/server.js')
+  gulp.watch(['dist-server/server.js', 'dist-server/routes.json'])
     .on('change', function() {
       server_process.kill();
       server_process = runServer();

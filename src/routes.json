@@ -10,5 +10,17 @@
   {
   	"path": "/events/:id",
   	"title": "gt-webdev events"
+  },
+  {
+  	"path": "/about",
+  	"title": "About gt-webdev"
+  },
+  {
+    "path": "/learn",
+    "title": "Learn WebDev"
+  },
+  {
+    "path": "/contact",
+    "title": "Contact gt-webdev"
   }
 ]

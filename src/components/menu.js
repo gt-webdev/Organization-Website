@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router'
-import {LinkContainer} from 'react-router-bootstrap'
+import {IndexLinkContainer, LinkContainer} from 'react-router-bootstrap'
 var Navbar = require("react-bootstrap/lib/Navbar");
 var Nav = require("react-bootstrap/lib/Nav");
 var NavItem = require("react-bootstrap/lib/NavItem");
@@ -20,7 +20,7 @@ class Menu extends React.Component {
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav pullRight>
-            <LinkContainer to="/"><NavItem>Home</NavItem></LinkContainer>
+            <IndexLinkContainer to="/"><NavItem>Home</NavItem></IndexLinkContainer>
             <LinkContainer to="/events"><NavItem>Events</NavItem></LinkContainer>
             <LinkContainer to="/learn"><NavItem>Learn</NavItem></LinkContainer>
             <LinkContainer to="/about"><NavItem>About</NavItem></LinkContainer>

@@ -5,6 +5,7 @@ import createBrowserHistory from 'history/lib/createBrowserHistory'
 import Root from './components/root'
 import Home from './pages/home'
 import Events from './pages/events'
+import Event from './pages/event'
 
 // Used for client-side and server-side rendering
 var router = (
@@ -12,6 +13,7 @@ var router = (
     <Route path="/" component={Root}>
       <IndexRoute component={Home} />
       <Route path="events" component={Events} />
+      <Route path="events/:id" component={Event} />
     </Route>
   </Router>
 );
